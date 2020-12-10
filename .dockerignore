@@ -1,0 +1,9 @@
+.env
+.vscode
+.DS_Store
+.gitignore
+.env.example
+.editorconfig
+.eslintrc.json
+README.md
+node_modules

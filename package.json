@@ -1,0 +1,25 @@
+{
+  "name": "docker-warsaw",
+  "version": "1.0.0",
+  "description": "dockerized warsaw puppeteer",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HenriqueSilverio/docker-warsaw.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "delay": "^4.4.0",
+    "p-retry": "^4.2.0",
+    "puppeteer": "^3.3.0",
+    "require-env": "^0.2.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "scripts": {
+    "start": "node ./src/index",
+    "start:dev": "node --require dotenv/config ./src/index"
+  }
+}

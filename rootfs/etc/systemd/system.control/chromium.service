@@ -1,0 +1,10 @@
+[Unit]
+Requires=novnc.service
+After=novnc.service
+
+[Service]
+ExecStart=/usr/local/bin/startbrowser.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

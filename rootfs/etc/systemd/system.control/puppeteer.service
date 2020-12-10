@@ -1,0 +1,14 @@
+[Unit]
+Requires=chromium.service
+After=chromium.service
+
+[Service]
+PassEnvironment=CAIXA_USERNAME
+ExecStart=/usr/local/bin/node /home/user/src/index
+Restart=on-failure
+User=user
+Group=user
+ExecStartPre=/bin/sleep 30
+
+[Install]
+WantedBy=multi-user.target
